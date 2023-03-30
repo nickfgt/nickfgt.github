@@ -1,0 +1,235 @@
+/* 公共式样 */
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.center {
+    width: 95%;
+    margin: 0 auto;
+}
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body{
+    overflow-y: hidden;
+}
+/* 一楼 header？ */
+.app{
+    display: flex;
+    justify-content: flex-end;
+}
+.header {
+    background-color: transparent;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo {
+    float: left;
+}
+.header .logo img {
+    width: 45px;
+    cursor: pointer;
+}
+/* 导航栏 nav css */
+.header .navbox {
+    display: flex;
+    justify-content: space-between;
+}
+.header .navbox .nav-item {
+    width: 850px;
+}
+.header .navbox .nav-item ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+
+}
+.header .navbox .nav-item ul li,a {
+    font-weight: bold;
+    font-size: 18px;
+    color: #b9b0aa;
+    cursor: pointer;
+}
+a:visited{
+    color: #b9b0aa;
+}
+/* 搜索图标 serch */
+.header .navbox .serch {
+    width: 20px;
+    height: 20px;
+}
+.header .navbox .serch img {
+    width: 20px;
+    height: 20px;
+}
+/* 登录按钮  */
+.header .navbox .login {
+    background-color: #008ee8;
+    width: 80px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-radius: 6px;
+    color: #fff;
+}
+/* 主体 文字部分 */
+main {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+main .main-box {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 160px;
+    margin-right: 60px;
+}
+main .main-box .txt01 img {
+    width: 530px;
+    margin-bottom: 15px;
+}
+main .main-box > p {
+    margin-bottom: 5px;
+    color: #fff;
+}
+/* 下载项 */
+main .main-box .download {
+    width: 530px;
+
+    display: flex;
+}
+main .main-box .download .download-box {
+    display: flex;
+    width: 600px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+main .main-box .download .xhhapp,
+.xhhjsq {
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 165px;
+    height: 55px;
+    background-color: #fff;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+main .main-box .download-box .xhhapp:hover ~ .xhhapp-01 {
+    opacity: 1;
+    transition-delay: 0s;
+}
+main .main-box .download-box .xhhapp-01:hover {
+    opacity: 1;
+    transition-delay: 0s;
+}
+main .main-box .download .xhhapp img,
+.xhhjsq img {
+    width: 35px;
+    height: 35px;
+}
+main .main-box .download .btxt {
+    font-size: 16px;
+}
+/* 悬浮显示下载项 */
+/* w300 h160  130*59 */
+main .main-box .xhhapp-01 {
+    width: 300px;
+    height: 160px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    opacity: 0;
+    transition: opacity 0.5s linear 0.5s;
+    margin-right: 65px;
+    cursor: pointer;
+}
+main .main-box .appled,
+.android {
+    width: 130px;
+    height: 60px;
+    background-color: #f3f4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+main .main-box .xhhapp-01 > img {
+    width: 125px;
+    height: 125px;
+}
+main .main-box .xhhapp-01 .pic img {
+    width: 15px;
+    height: 15px;
+}
+/* 底部信息栏 */
+footer {
+    margin-top: -15px;
+}
+.txt{
+    color: #a3a3a3;
+    text-align: center;
+    font-size: 12px;
+}
+.txt .dxcp{
+    font-size: 14px;
+    margin: 0 auto;
+    margin-top: -80px;
+    margin-bottom: 35px;
+    height: 40px;
+    width: 110px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    color: #fff;
+    background-color: rgba(182, 182, 182, 0.2);
+    cursor: pointer;
+}
+.txt p{
+    margin:5px 0;
+}
+.txt a{
+    color: #a3a3a3;
+}
+/* 背景横幅 */
+.video-box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit:fill;
+    z-index: -1;
+    position: absolute;
+}
